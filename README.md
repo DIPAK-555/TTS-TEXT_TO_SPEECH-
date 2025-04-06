@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔊 Text-to-Speech App
 
 A sleek, responsive, and modern **Text-to-Speech (TTS)** web application that converts written text into realistic speech using the CloudLabs API. This project includes a stylish dark theme, animations, voice selection, and auto-play functionality.
@@ -17,3 +18,6 @@ A sleek, responsive, and modern **Text-to-Speech (TTS)** web application that co
 - **Backend:** Node.js, Express.js
 - **API:** [CloudLabs Text-to-Speech]
 
+=======
+# TTS-TEXT_TO_SPEECH-
+>>>>>>> 8a53b4b (Initial commit)
