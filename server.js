@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = 3000 || process.env.PORT;
 
 // Middleware
 app.use(cors());
@@ -52,7 +52,7 @@ app.post("/api/tts", async (req, res) => {
     const response = await axios.request(options);
     const data = response.data;
 
-    console.log("✅ TTS API response:", data);
+    console.log("TTS API response:", data);
 
     // Handle CloudLabs response structure
     if (data.status === "processing" && data.url) {
@@ -71,13 +71,17 @@ app.post("/api/tts", async (req, res) => {
       res.status(500).json({ error: "API returned no usable audio or URL." });
     }
   } catch (error) {
-    console.error("❌ API ERROR:", error.response?.data || error.message);
+    console.error(" API ERROR:", error.response?.data || error.message);
     res
       .status(500)
       .json({ error: "TTS conversion failed. Please try again later." });
   }
 });
 
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "public", "index.html"));
+// });
+
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(` Server running at http://localhost:${PORT}`);
 });
