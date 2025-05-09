@@ -16,7 +16,7 @@ Uses a polling mechanism to check real-time audio readiness — no unnecessary w
 
 🎯 Simple & Intuitive UI
 Clean input interface with audio preview, download, and error handling.
-
+ 
 🌐 Cross-Platform Web App
 Fully browser-based — no installation required.
 
