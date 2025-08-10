@@ -12,7 +12,7 @@ async function convertTextToSpeech() {
   console.log("Text:", text);
   console.log("Voice:", voice);
 
-  audioContainer.innerHTML = "<p>⏳ Generating audio...</p>";
+  audioContainer.innerHTML = "<p>Generating audio...</p>";
 
   try {
     const response = await fetch("/api/tts", {
