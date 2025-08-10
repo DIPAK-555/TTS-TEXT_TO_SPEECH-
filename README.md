@@ -1,8 +1,7 @@
+# 🔊 Text-to-Speech App
 
 🎤 TTS-TEXT_TO_SPEECH
 TTS-TEXT_TO_SPEECH is a powerful and easy-to-use web application that transforms written text into natural-sounding speech using API-powered AI voices. Whether you're looking to convert documents, generate audio content, or make web reading more accessible — this tool does it fast, smartly, and beautifully.
-
-# 🔊 Text-to-Speech App
 
 🔗 Live Demo: [https://tts-hva8.onrender.com]
 📦 Backend: Node.js (Express)
